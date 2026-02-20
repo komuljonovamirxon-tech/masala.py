@@ -75,37 +75,38 @@
 # print(user.parolni_tekshir("maxfiy123"))
 # print(user.parolni_tekshir("yangiParol1"))
 
-class Talaba:
-    def __init__(self, ism, fan):
-        self.__ism = ism
-        self.__fan = fan
-        self.__baholar = []
+# class Talaba:
+#     def __init__(self, ism, fan):
+#         self.__ism = ism
+#         self.__fan = fan
+#         self.__baholar = []
 
-    def get_ism(self):
-        return self.__ism
-    def get_fan(self):
-        return self.__fan
-    def baho_qosh(self, baho):
-        if not (0 <= baho <= 100):
-            print("baho 0 dan 100 gacha bolishi kerak")
-            return
-        else:
-            self.__baholar.append(baho)
-    def get_baholar(self):
-        return self.__baholar.copy()
-    def ortacha_baho(self):
-        if not self.__baholar:
-            print("hali baho yoq")
-            return None
-        else:
-            return round(sum(self.__baholar) / len(self.__baholar), 2)
+#     def get_ism(self):
+#         return self.__ism
+#     def get_fan(self):
+#         return self.__fan
+#     def baho_qosh(self, baho):
+#         if not (0 <= baho <= 100):
+#             print("baho 0 dan 100 gacha bolishi kerak")
+#             return
+#         else:
+#             self.__baholar.append(baho)
+#     def get_baholar(self):
+#         return self.__baholar.copy()
+#     def ortacha_baho(self):
+#         if not self.__baholar:
+#             print("hali baho yoq")
+#             return None
+#         else:
+#             return round(sum(self.__baholar) / len(self.__baholar), 2)
         
-talaba1 = Talaba("dolliit", "math")
-talaba1.baho_qosh(90)
-talaba1.baho_qosh(100)
-talaba1.baho_qosh(80)
-print(talaba1.ortacha_baho())
-print(talaba1.get_baholar())
+# talaba1 = Talaba("dolliit", "math")
+# talaba1.baho_qosh(90)
+# talaba1.baho_qosh(100)
+# talaba1.baho_qosh(80)
+# print(talaba1.ortacha_baho())
+# print(talaba1.get_baholar())
+
 
 
 
